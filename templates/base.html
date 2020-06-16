@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+    {% block head %}
+
+        <title>Python Calendar</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewreport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Author" content="Jose Teotonio(Teo) - teonett@gmail.com">
+        <meta name="Description" content="Simple Calendar Flask Python">    
+    
+        <link rel="stylesheet" href="{{ url_for('static', filename='foundation/stylesheets/foundation.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='foundation/stylesheets/app.css') }}">
+        <script src="{{ url_for('static', filename='foundation/javascripts/modernizr.foundation.js') }}"></script>
+
+        <style>
+            header {
+                position: fixed;
+                top: 0px;
+                color: #ffffff;
+                text-align: center;
+                font-size: xx-large;
+                background-color: #006bb3;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 0px;
+            }
+            
+            footer {
+                position: fixed;
+                bottom:0px;
+                color: #ffffff;
+                background-color: #006bb3;
+                width: 100%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 0px;
+                text-align: center;
+                font-size: large;
+            }
+            thead {
+                color: #ffffff;
+                background-color: #006bb3;
+            }
+        </style>
+
+    {% endblock %}
+</head>
+<body>
+
+    <header>Calendar Flask Python</header>
+    <p style="margin-top: 90px;"></p>
+
+    {% block body %}
+    {% endblock %}
+    {% block tail %}
+        
+        <script src="{{ url_for('static', filename='foundation/javascripts/foundation.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='foundation/javascripts/app.js') }}"></script>
+    {% endblock %}
+
+    <footer>&copy;2020 - Jose Teotonio - E-mail: teonett@gmail.com</footer>
+</body>
+</html>
