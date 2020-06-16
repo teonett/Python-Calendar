@@ -1,6 +1,6 @@
 # Python Calendar - Flask
 
-<img src="https://github.com/teonett/Python-Calendar/blob/master/img/Preview.png">
+<img src="https://github.com/teonett/Python-Calendar/blob/master/img/preview.png">
 
 <h4>Copyright (C) 2020 Jose Teotonio (teonett@gmail.com)</h4>
 
